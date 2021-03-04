@@ -1,0 +1,687 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+#modalMenu .modal-header {
+  background-color: #3C1A5B;
+  color: #FFFF00;
+}
+#logoindex {
+  width: 100%;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+#logo2index {
+  width: 100%;
+  padding: 0;
+  height: 150px;
+}
+#search {
+  margin-top: 1rem;
+}
+#search > form {
+  margin-left: 2rem;
+}
+#search > form >div> button {
+  background-color: #FFFF00;
+  color: black;
+  font-weight: 700;
+}
+#navbarResponsive>ul>li>a {
+	display: grid;
+	text-align: center;
+	align-items: center;
+	text-align: -webkit-center;
+	align-items: -webkit-center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: black;
+}
+footer {
+  background-color: #3C1A5B;
+  color: white;
+}
+.navbar {
+  background-color: #3C1A5B!important;
+  height: 150px;
+}
+.nav-item {
+  opacity: 0.6;
+  transition: 0.3s;
+  color: black;
+  font-weight: 400;
+}
+.nav-item:hover {
+  opacity: 1;
+  background-color: white;
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+#social {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 7;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-item {
+    margin-left: 1rem;
+  }
+  #logoindex {
+  width: 90%;
+  padding: 0;
+  margin-top: 0;
+}
+#logo2index {
+  width: 100%;
+  padding: 0;
+  height: 150px;
+}
+  #head_page>div.row:first-child {
+    padding: 15px;
+  }
+  #head_page>div.row:first-child>div:first-child {
+    margin-bottom: 1rem;
+  }
+  .small-banner:first-child {
+    margin-bottom: 1rem;
+  }
+  .navbar {
+    top:0;
+    height: 170px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    margin-bottom: 2rem;
+  }
+  #head_page {
+    margin-top: 10.5rem;
+  }
+}
+.new-products > span{
+  content: '';
+  width: 70px;
+  height: 4px;
+  background: black;
+  display: block;
+  margin: 0 auto;
+}
+.new-products {
+  padding: 0.75rem;
+  text-align: center;
+  align-items: center;
+  text-align: -webkit-center;
+  align-items: -webkit-center;
+  text-transform: uppercase;
+}
+.nav-item {
+  margin-left: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+.banner {
+	height: 100%;
+}
+.banner>img {
+	width: 100%;
+	height: 350px;
+}
+.logo-social>.row>div {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  text-align: center;
+  align-items: center;
+  text-align: -webkit-center;
+  align-items: -webkit-center;
+}
+.logo-social>.row > div > a > img {
+  width: 100%;
+  height: 100%;
+}
+.child-banner>img {
+	width: 100%;
+  height: 175px
+}
+.row>div {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}
+.logo-brand {
+	padding: 0.5rem;
+	text-align: -webkit-center;
+	text-align: center;
+}
+.card {
+  height: 300px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: unset;
+}
+.show-img-product {
+  height: 70%;
+  width: 75%;
+}
+.show-img-product>img {
+  width: 100%;
+  height: 100%;
+}
+.card-title {
+  padding-top: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  height: 45px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.card-body {
+  text-align: center;
+  height: 2.5rem;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.add {
+  width: 100%;
+  position: absolute;
+  transform: translateY(40px);
+}
+
+.card:hover .add {
+  transform: translateY(-3px);
+  transition: all 0.5s;
+}
+
+.card:hover  {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  transform: translateY(-10px);
+  transition: all 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.div-price-product{
+	display: flex;
+	padding:1rem;
+}
+.div-price-product>p{
+	margin:1rem;
+	font-weight: 700
+}
+.images-slides{
+	justify-content: center;
+
+}
+.product-tab{
+  display: inline-flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 2px solid #dddddd;
+
+}
+.product-tab>li:first-child {
+  margin-left: 0;
+}
+.product-tab>li{
+  padding: 0.5rem;
+  list-style: none;
+  display: inline;
+  float: left;
+  margin-left: 2.5rem;
+}
+.detail-product {
+  padding: 2rem;
+}
+.row {
+  width: 100%;
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+.product-lienquan>div.card-title {
+  height: 0!important;
+}
+.list-group{
+  width:0%;
+}
+.product-feature>span:first-child{
+  color: blue
+}
+ul.list-group>li>i{
+  float: right;
+  right: 0;
+}
+ul.list-group>li{
+  justify-content: center;
+}
+.form-group>label,p{
+  margin-left: 0.5rem;
+}
+.form-group>input {
+  float: right;
+  max-width: 300px;
+  margin-right: 2rem;
+}
+#product>div.show-cate{
+  margin: 0!important;
+  width:100%;
+  padding-left:0.5rem;
+  padding-right:1.5rem;
+  margin-bottom: 2rem !important;
+}
+#page-dutoan {
+  padding: 1rem;
+}
+ #hang {
+  text-transform: uppercase;
+ }
+ #head_page{
+  margin-bottom: 1.5rem;
+ }
+
+ .category {
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+  text-align: -webkit-center;
+  align-items: -webkit-center;
+ }
+ .menu {
+  padding: 0!important;
+ }
+ .sub-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  padding: 0;
+  z-index:3;
+  color: black;
+  text-transform: uppercase;
+ }
+ .sub-menu>li{
+  background-color: #FFFF00;
+  padding: 10px;
+  border-bottom: 1px solid red;
+ }
+ .menu>li {
+  padding: 10px;
+  background: #eee none repeat scroll 0 0;
+  border-bottom: 1px solid #d5d5d5;
+/*  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+*/  border-left: 4px solid #5FC0B9;
+ }
+ .menu>li>a{
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+ }
+ .menu>li:first-child>a{
+  color: #FFFF00;
+  font-weight: 500;
+  text-transform: uppercase;
+ }
+  .menu>li:first-child {
+    background-color: #3C1A5B;
+  }
+ .menu>li:hover{
+  border-left:4px solid red; 
+ }
+ .menu>li:hover>.sub-menu {
+  display: block;
+ }
+
+/* #chitiet>section {
+  margin-top: 2rem;
+ }*/
+#chitiet>.category {
+  padding: 0;
+}
+.menu-modal {
+  padding: 0;
+}
+.menu-modal-li {
+  text-transform: uppercase;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+.menu-modal-li:hover {
+    border-left: 2px solid black;
+}
+.submenu-modal>li {
+  text-transform: uppercase;
+  padding: 5px;
+  color: white;
+  border-bottom: 2px solid black;
+}
+#footer-ul>a {
+  text-transform: uppercase;
+  color: white;
+}
+.footer-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.footer-container>div>iframe {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#mySidenav a {
+  z-index: 30;
+  position: fixed;
+  right: -182px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 220px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px 0 0 10px;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#about {
+  top: 420px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 480px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 540px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 600px;
+  background-color: #555
+}
+.modal .modal-dialog-aside{
+  width: 350px;
+  max-width:80%; height: 100%; margin:0;
+  transform: translate(0); transition: transform .2s;
+}
+.modal .modal-dialog-aside .modal-content{  height: inherit; border:0; border-radius: 0;}
+.modal .modal-dialog-aside .modal-content .modal-body{ overflow-y: auto }
+.modal.fixed-left .modal-dialog-aside{ margin-left:auto;  transform: translateX(100%); }
+.modal.fixed-right .modal-dialog-aside{ margin-right:auto; transform: translateX(-100%); }
+
+.modal.show .modal-dialog-aside{ transform: translateX(0);  }
+
+
+ /*Quick alo phone*/
+.hotline-phone-ring-wrap {
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: 999999;
+}
+.hotline-phone-ring {
+position: relative;
+visibility: visible;
+background-color: transparent;
+width: 110px;
+height: 110px;
+cursor: pointer;
+z-index: 11;
+-webkit-backface-visibility: hidden;
+-webkit-transform: translateZ(0);
+transition: visibility .5s;
+left: 0;
+bottom: 0;
+display: block;
+}
+.hotline-phone-ring-circle {
+width: 85px;
+height: 85px;
+top: 10px;
+left: 10px;
+position: absolute;
+background-color: transparent;
+border-radius: 100%;
+border: 2px solid #e60808;
+-webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+transition: all .5s;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+opacity: 0.5;
+}
+.hotline-phone-ring-circle-fill {
+width: 55px;
+height: 55px;
+top: 25px;
+left: 25px;
+position: absolute;
+background-color: rgba(230, 8, 8, 0.7);
+border-radius: 100%;
+border: 2px solid transparent;
+-webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+transition: all .5s;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+background-color: #e60808;
+width: 33px;
+height: 33px;
+top: 37px;
+left: 37px;
+position: absolute;
+background-size: 20px;
+border-radius: 100%;
+border: 2px solid transparent;
+-webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+-webkit-transform-origin: 50% 50%;
+-ms-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+width: 20px;
+height: 20px;
+}
+.hotline-bar {
+position: absolute;
+background: rgba(230, 8, 8, 0.75);
+height: 40px;
+width: 180px;
+line-height: 40px;
+border-radius: 3px;
+padding: 0 10px;
+background-size: 100%;
+cursor: pointer;
+transition: all 0.8s;
+-webkit-transition: all 0.8s;
+z-index: 9;
+box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+border-radius: 50px !important;
+/* width: 175px !important; */
+left: 33px;
+bottom: 37px;
+}
+.hotline-bar > a {
+color: #fff;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+text-indent: 50px;
+display: block;
+letter-spacing: 1px;
+line-height: 40px;
+font-family: Arial;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+color: #fff;
+}
+@-webkit-keyframes phonering-alo-circle-anim {
+0% {
+-webkit-transform: rotate(0) scale(0.5) skew(1deg);
+-webkit-opacity: 0.1;
+}
+30% {
+-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+-webkit-opacity: 0.5;
+}
+100% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+-webkit-opacity: 0.1;
+}
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+0% {
+-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+opacity: 0.6;
+}
+50% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+opacity: 0.6;
+}
+100% {
+-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+opacity: 0.6;
+}
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+0% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+}
+10% {
+-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+}
+20% {
+-webkit-transform: rotate(25deg) scale(1) skew(1deg);
+}
+30% {
+-webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+}
+40% {
+-webkit-transform: rotate(25deg) scale(1) skew(1deg);
+}
+50% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+}
+100% {
+-webkit-transform: rotate(0) scale(1) skew(1deg);
+}
+}
+@media (max-width: 768px) {
+.hotline-bar {
+display: none;
+}
+}

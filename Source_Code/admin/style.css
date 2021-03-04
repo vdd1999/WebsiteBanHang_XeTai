@@ -1,0 +1,223 @@
+.wrapper {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    background: #1f283e;
+    background-image: url(https://images.unsplash.com/photo-1505322022379-7c3353ee6291?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    opacity: .94;
+    height: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar .logo {
+    padding: 15px 0px;
+    margin: 0;
+    display: block;
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #a9afbb63;
+}
+
+.logo-text {
+    color: #a9afbbd1;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 0px;
+    line-height: 30px;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color: #a9afbbd1;
+}
+
+.sidebar .nav {
+    margin-top: 20px;
+    display: block;
+}
+
+.nav .nav-item .nav-link {
+    color: #fff;
+}
+
+li.active>a {
+    background: linear-gradient(60deg, #7b1fa2, #913f9e);
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.nav-link p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.nav-link {
+    margin: 10px 10px 0;
+    border-radius: 3px;
+    color: #3C4858;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-transform: capitalize;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button#myBtnClose {
+    border: none;
+    background: transparent;
+    color: white;
+    float: right;
+    margin-top: 1px;
+}
+
+button#myBtnOpen {
+    border: none;
+    background: transparent;
+    color: white;
+    float: left;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+div#list {
+    text-align: center;
+    display: inline-grid;
+    border-right: 1px solid #dcdcdc26;
+    padding-bottom: 300px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#list i {
+    color: white;
+    align-self: center;
+}
+
+.navbar h2 {
+    color: #a9afbbd1;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+.main-content .card {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #1a2035!important;
+}
+@media only screen and (max-width: 750px) {
+  .sidebar {
+    width: 45%!important;
+  }
+}
+.main-content .container {
+    padding: 10px 20px;
+    margin: 10px 2%;
+    width: 96% !important;
+    max-width: 96%;
+}
+#config .card{
+    flex-direction: unset;
+    padding: 15px;
+    border: none!important;
+}
+.card.one {
+    background: linear-gradient(45deg, #b7ff43, #ff833acf);
+}
+
+.card.two {
+    background: linear-gradient(45deg, #0053eb, #229abe);
+}
+
+.card.three {
+    background: linear-gradient(45deg, #ed0d0d, #a10a7a);
+}
+
+.card.four {
+    background: linear-gradient(45deg, #031493, #870689);
+}
+
+.chart {
+    display: flex;
+    margin-top: 50px;
+    padding: 20px 15%;
+    border-top: 1px solid;
+    justify-content: space-between;
+}
+
+.chart i {
+    font-size: 30px;
+}
+
+#mySidebar {
+    display: none;
+}
+
+.table tr {
+    cursor: pointer;
+}
+
+.table tr:hover {
+    background: #8b008b61;
+}
+
+.table {
+    text-align: center;
+}
+
+.table td , .table th {
+    border: 1px solid white;
+}
+    
+.nav-link:hover {
+    background-color:#80008042;
+}
+
+.manage .nav-link {
+    padding-left: 25px;
+}
+.header {
+    display: flex;
+    margin-bottom: 2rem;
+}
+#show-tk {
+    color: white;
+}
+#show-tk > tbody > tr > td > img {
+    width: 100px;
+    height: 100px;
+}
+#show-tk > tbody > tr > td {
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    text-align: -webkit-center;
+    align-items: -webkit-center;
+    justify-content: center;
+    vertical-align: middle;
+}
+.collapse {
+    color: white;
+}
+#chitietxe {
+    margin-top: 2rem;
+}
+
